@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ReactLogo = () => {
   return (
     <svg
