@@ -1,3 +1,4 @@
+import React from "react";
 import { Chain } from "../../svg/chain";
 import { GitHub } from "../../svg/gtihub";
 import "./styles.scss";
