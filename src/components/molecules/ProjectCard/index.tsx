@@ -21,7 +21,7 @@ function ProjectCard({
 }: ProjectTypes) {
   return (
     <div className="container">
-      <img src={imgUrl} alt="" />
+      <img src={imgUrl} alt="Imagem do projeto" />
       <div className="container-content">
         <div className="text-content">
           <h2 className="title">{name}</h2>
@@ -35,14 +35,14 @@ function ProjectCard({
         </div>
         <div className="container-hooks">
           <div className="hooks-card">
-            <Chain />
-            <a target="_blank" href={linkDeploy}>
+            <GitHub />
+            <a target="_blank" href={linkGit}>
               View Code
             </a>
           </div>
           <div className="hooks-card">
-            <GitHub />
-            <a target="_blank" href={linkGit}>
+            <Chain />
+            <a target="_blank" href={linkDeploy}>
               Live Preview
             </a>
           </div>

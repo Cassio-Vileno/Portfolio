@@ -6,7 +6,6 @@ import { Html } from "../../components/svg/html";
 import { Instagram } from "../../components/svg/instagran";
 import { Js } from "../../components/svg/js";
 import { LinkedIn } from "../../components/svg/linkedin";
-import { Logo } from "../../components/svg/logo";
 import { ReactLogo } from "../../components/svg/react";
 import { Scss } from "../../components/svg/scss";
 import { LogoStyled } from "../../components/svg/styledComponets";
@@ -25,53 +24,35 @@ type ProjectTypes = {
 function Home() {
   const projectData: ProjectTypes[] = [
     {
-      name: "GitHub Explore",
+      name: "Kapture Propostas",
       imgUrl:
-        "https://user-images.githubusercontent.com/87983174/211084774-3afcba9e-94ab-4ca3-b2c8-3f499e7153ed.png",
+        "https://play-lh.googleusercontent.com/T0IToHWgfMjTNlcLfjvSuZv9hhWvQmssJv4aw6nZXYriecZF0XUg3Fj6q_wnzyI1VM_x=w5120-h2880-rw",
       description:
-        "O GitHub Explore é uma plataforma de visualização de repositórios, bem como informações de cada repositório, como estrelas, forks e issues.",
-      linkGit: "https://github.com/Cassio-Vileno/GithubExplorer",
-      linkDeploy: "https://github-explorer-five-ruby.vercel.app/",
-      techStack: ["React", "TypeScript", "Styled Components", "Axios"],
+        "Uma plataforma intuitiva e prática, para que você tenaha acesso a todas as informações necessárias para fazer a gestão e concessão de crédito.",
+      linkGit: "#",
+      linkDeploy:
+        "https://play.google.com/store/apps/details?id=com.kaptureproposals&pli=1",
+      techStack: ["React Native", "TypeScript", "Styled Components", "Axios"],
     },
     {
-      name: "GitHub Explore",
+      name: "Kapture Auto",
       imgUrl:
-        "https://user-images.githubusercontent.com/87983174/211084774-3afcba9e-94ab-4ca3-b2c8-3f499e7153ed.png",
+        "https://play-lh.googleusercontent.com/T0IToHWgfMjTNlcLfjvSuZv9hhWvQmssJv4aw6nZXYriecZF0XUg3Fj6q_wnzyI1VM_x=w5120-h2880-rw",
       description:
-        "O GitHub Explore é uma plataforma de visualização de repositórios, bem como informações de cada repositório, como estrelas, forks e issues.",
-      linkGit: "https://github.com/Cassio-Vileno/GithubExplorer",
-      linkDeploy: "https://github-explorer-five-ruby.vercel.app/",
-      techStack: ["React", "TypeScript", "Styled Components", "Axios"],
+        "Uma plataforma intuitiva de auto atendimento, para que você mesmo possa fazer o pedido de seu cartão de credito.",
+      linkGit: "#",
+      linkDeploy: "https://atendimento.cartaoservir.com.br/",
+      techStack: ["ReactJs", "TypeScript", "Styled Components", "Axios"],
     },
     {
-      name: "GitHub Explore",
+      name: "FideliClub",
       imgUrl:
-        "https://user-images.githubusercontent.com/87983174/211084774-3afcba9e-94ab-4ca3-b2c8-3f499e7153ed.png",
+        "https://api-cdn.figma.com/resize/img/af84/e939/5d96c6d734cd71cc104e23612951a148?expiration=1692576000&signature=2bf65a66760142e431aa847b5c2394140144d7acd1a6affc952f0d8e271306a3&maxsize=2048&bucket=figma-alpha",
       description:
-        "O GitHub Explore é uma plataforma de visualização de repositórios, bem como informações de cada repositório, como estrelas, forks e issues.",
-      linkGit: "https://github.com/Cassio-Vileno/GithubExplorer",
-      linkDeploy: "https://github-explorer-five-ruby.vercel.app/",
-      techStack: ["React", "TypeScript", "Styled Components", "Axios"],
-    },
-    {
-      name: "GitHub Explore",
-      imgUrl:
-        "https://user-images.githubusercontent.com/87983174/211084774-3afcba9e-94ab-4ca3-b2c8-3f499e7153ed.png",
-      description:
-        "O GitHub Explore é uma plataforma de visualização de repositórios, bem como informações de cada repositório, como estrelas, forks e issues.",
-      linkGit: "https://github.com/Cassio-Vileno/GithubExplorer",
-      linkDeploy: "https://github-explorer-five-ruby.vercel.app/",
-      techStack: ["React", "TypeScript", "Styled Components", "Axios"],
-    },
-    {
-      name: "GitHub Explore",
-      imgUrl:
-        "https://user-images.githubusercontent.com/87983174/211084774-3afcba9e-94ab-4ca3-b2c8-3f499e7153ed.png",
-      description:
-        "O GitHub Explore é uma plataforma de visualização de repositórios, bem como informações de cada repositório, como estrelas, forks e issues.",
-      linkGit: "https://github.com/Cassio-Vileno/GithubExplorer",
-      linkDeploy: "https://github-explorer-five-ruby.vercel.app/",
+        "O FideliClub é um aplicativo de fidelidade com o objetivo de diminuir os custos de capitação de clientes das empresas com uma estrategia de cashback.",
+      linkGit: "#",
+      linkDeploy:
+        "https://play.google.com/store/apps/details?id=com.interativasoft.fideliclub",
       techStack: ["React", "TypeScript", "Styled Components", "Axios"],
     },
     {
@@ -88,6 +69,7 @@ function Home() {
   return (
     <main className="main">
       <header className="header">
+        <img className="logo" src="images/athena_logo.svg" alt="athena_logo" />
         <nav className="hooks">
           <a href="#presentation">Home</a>
           <a href="#technologies">Habilidades</a>
@@ -169,7 +151,11 @@ function Home() {
       <footer className="footer">
         <div className="footer-container">
           <div className="container-contact">
-            <Logo />
+            <img
+              className="logo"
+              src="images/athena_logo.svg"
+              alt="athena_logo"
+            />
             <div className="container-content">
               <p>(77) 99838-7590</p>
               <p>cassiovileno@gmail.com</p>

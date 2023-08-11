@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.logo {
+  width: 150px;
+}
+
 .hooks {
   display: flex;
   gap: 30px;
@@ -186,9 +190,11 @@
     height: 100px;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     border-bottom: 2px solid #42446e;
     padding-top: 30px;
     margin-top: 60px;
+    padding-bottom: 15px;
   }
 
   .container-content {
