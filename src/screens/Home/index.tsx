@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ProjectCard from "../../components/molecules/ProjectCard";
 import { Css } from "../../components/svg/css";
 import { GitHubTech } from "../../components/svg/githubtech";
