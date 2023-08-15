@@ -1,3 +1,4 @@
+import { useState } from "react";
 import ProjectCard from "../../components/molecules/ProjectCard";
 import { Css } from "../../components/svg/css";
 import { GitHubTech } from "../../components/svg/githubtech";
@@ -11,6 +12,7 @@ import { Scss } from "../../components/svg/scss";
 import { LogoStyled } from "../../components/svg/styledComponets";
 import { Ts } from "../../components/svg/ts";
 import "./styles.scss";
+import Header from "../../components/molecules/Header";
 
 type ProjectTypes = {
   name: string;
@@ -47,7 +49,7 @@ function Home() {
     {
       name: "FideliClub",
       imgUrl:
-        "https://api-cdn.figma.com/resize/img/af84/e939/5d96c6d734cd71cc104e23612951a148?expiration=1692576000&signature=2bf65a66760142e431aa847b5c2394140144d7acd1a6affc952f0d8e271306a3&maxsize=2048&bucket=figma-alpha",
+        "https://play-lh.googleusercontent.com/esYeNzaIU3UkJNw1WfgKMA_waTfSMrUHt53pGmOONQGGcdQJ89mFVhgPcQTMJHCuBPI=w832-h470-rw",
       description:
         "O FideliClub é um aplicativo de fidelidade com o objetivo de diminuir os custos de capitação de clientes das empresas com uma estrategia de cashback.",
       linkGit: "#",
@@ -66,51 +68,19 @@ function Home() {
       techStack: ["React", "TypeScript", "Styled Components", "Axios"],
     },
   ];
+
   return (
     <main className="main">
-      <header className="header">
-        <img className="logo" src="images/athena_logo.svg" alt="athena_logo" />
-        <nav className="hooks">
-          <a href="#presentation">Home</a>
-          <a href="#technologies">Habilidades</a>
-          <a href="#projects">Projetos</a>
-          <a href="#projects">experiências</a>
-          <a href="#">Sobre</a>
-          <a href="#">Contato</a>
-          <div className="media">
-            <a
-              className="media-logo"
-              target="_blank"
-              href="https://github.com/Cassio-Vileno"
-            >
-              <GitHub />
-            </a>
-            <a
-              className="media-logo"
-              target="_blank"
-              href="https://www.linkedin.com/in/cassio-vileno/"
-            >
-              <LinkedIn />
-            </a>
-            <a
-              className="media-logo"
-              target="_blank"
-              href="https://www.instagram.com/vileno_dev/"
-            >
-              <Instagram />
-            </a>
-          </div>
-        </nav>
-      </header>
+      <Header />
       <body className="body">
         <div id="presentation" className="first-session">
-          <div>
+          <div className="presentation-content">
             <h2>
               Olá 👋, <br />
               Meu nome é
             </h2>
             <span className="name">Cassio Vileno</span>
-            <h2>Sou um desenvolvedor React</h2>
+            <h2>Sou um desenvolvedor Front End</h2>
           </div>
           <div className="avatar">
             <img src="images/avatar.jpg" alt="avatar" />
@@ -185,7 +155,7 @@ function Home() {
             </div>
           </div>
           <div className="nav-footer-container">
-            <nav className="hooks">
+            <nav className="footer-hooks">
               <a href="#presentation">Home</a>
               <a href="#technologies">Habilidades</a>
               <a href="#projects">Projetos</a>

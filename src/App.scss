@@ -14,6 +14,7 @@ main {
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 @keyframes appear {
