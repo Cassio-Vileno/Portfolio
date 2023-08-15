@@ -21,7 +21,6 @@ const Header = () => {
     <header>
       <nav className={isActive ? "active" : ""}>
         <img className="logo" src="images/athena_logo.svg" alt="athena_logo" />
-
         <div
           className={`mobile-menu ${isActive ? "active" : ""}`}
           onClick={toggleMenu}

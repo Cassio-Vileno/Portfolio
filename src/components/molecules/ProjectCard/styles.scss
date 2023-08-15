@@ -98,3 +98,41 @@
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 890px) {
+  .container {
+    width: 330px;
+    max-height: 570px;
+
+    img {
+      width: 330px;
+    }
+  }
+
+  .container-content {
+    h2 {
+      padding-top: 20px;
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .text-content {
+    min-height: 200px;
+  }
+
+  #tech-content {
+    margin-bottom: 10px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .hooks-card {
+    margin-bottom: 15px;
+  }
+}

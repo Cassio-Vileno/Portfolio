@@ -47,7 +47,7 @@
   .first-session {
     display: flex;
     width: 100%;
-    height: 800px;
+    height: 80vh;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -104,7 +104,7 @@
   .second-session {
     display: flex;
     width: 100%;
-    height: 800px;
+    height: 80vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -218,7 +218,7 @@
 
     .first-session {
       flex-direction: column-reverse;
-      height: 900px;
+      height: 90vh;
 
       h2 {
         font-size: 38px;
@@ -227,20 +227,40 @@
       .name {
         font-size: 38px;
       }
+
+      .avatar {
+        width: 320px;
+        height: 320px;
+        min-width: 320px;
+        img {
+          width: 305px;
+          height: 305px;
+          border-radius: 50%;
+        }
+      }
     }
 
     .second-session {
       width: 100%;
-      margin-bottom: 10vh;
+      margin: 10vh 0;
 
       .tech-stack {
-        width: 600px;
         width: 100%;
+        gap: 50px;
+
+        svg {
+          width: 100px;
+          height: 100px;
+        }
       }
     }
   }
 
   .footer {
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 20px;
+
     .container-contact {
       flex-direction: column;
       padding-bottom: 20px;
@@ -253,18 +273,16 @@
     }
 
     .nav-footer-container {
-      flex-direction: column;
-      height: 50vh;
+      display: flex;
+      height: 12vh;
+      margin-top: 10px;
     }
 
-    .footer-hooks {
-      display: flex;
-      gap: 15px;
+    nav {
       flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-      height: 120px;
       margin: 20px 0;
+      gap: 15px;
+      align-items: center;
     }
   }
 }

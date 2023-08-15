@@ -154,10 +154,12 @@ function Home() {
             </div>
           </div>
           <div className="nav-footer-container">
-            <nav className="footer-hooks">
+            <nav>
               <a href="#presentation">Home</a>
               <a href="#technologies">Habilidades</a>
               <a href="#projects">Projetos</a>
+            </nav>
+            <nav>
               <a href="#projects">experiências</a>
               <a href="#">Sobre</a>
               <a href="#">Contato</a>
