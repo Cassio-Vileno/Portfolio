@@ -46,7 +46,7 @@ const Header = () => {
             </a>
           </li>
           <li style={animateLinks(3)}>
-            <a onClick={toggleMenu} href="#projects">
+            <a onClick={toggleMenu} href="#experiences">
               experiências
             </a>
           </li>

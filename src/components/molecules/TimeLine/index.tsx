@@ -51,7 +51,7 @@ const TimeLine = () => {
   const schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <div>
+    <div id="experiences">
       <h1 className="title">Linha do tempo</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
