@@ -1,17 +1,19 @@
 import ProjectCard from "../../components/molecules/ProjectCard";
-import { Css } from "../../components/svg/css";
-import { GitHubTech } from "../../components/svg/githubtech";
-import { GitHub } from "../../components/svg/gtihub";
-import { Html } from "../../components/svg/html";
+import { GitHub } from "../../components/svg/github";
 import { Instagram } from "../../components/svg/instagran";
-import { Js } from "../../components/svg/js";
 import { LinkedIn } from "../../components/svg/linkedin";
-import { ReactLogo } from "../../components/svg/react";
-import { Scss } from "../../components/svg/scss";
-import { LogoStyled } from "../../components/svg/styledComponets";
-import { Ts } from "../../components/svg/ts";
+
 import "./styles.scss";
 import Header from "../../components/molecules/Header";
+import TechnologyCard from "../../components/molecules/TechnologyCard";
+import { ReactLogo } from "../../components/svg/react";
+import { Ts } from "../../components/svg/ts";
+import { Js } from "../../components/svg/js";
+import { Scss } from "../../components/svg/scss";
+import { Css } from "../../components/svg/css";
+import { Html } from "../../components/svg/html";
+import { LogoStyled } from "../../components/svg/styledComponets";
+import { ReactNativeLogo } from "../../components/svg/reactNative";
 
 type ProjectTypes = {
   name: string;
@@ -54,7 +56,7 @@ function Home() {
       linkGit: "#",
       linkDeploy:
         "https://play.google.com/store/apps/details?id=com.interativasoft.fideliclub",
-      techStack: ["React", "TypeScript", "Styled Components", "Axios"],
+      techStack: ["React Native", "TypeScript", "Styled Components", "Axios"],
     },
     {
       name: "GitHub Explore",
@@ -66,6 +68,29 @@ function Home() {
       linkDeploy: "https://github-explorer-five-ruby.vercel.app/",
       techStack: ["React", "TypeScript", "Styled Components", "Axios"],
     },
+    {
+      name: "Pessoal Web",
+      imgUrl:
+        "https://play-lh.googleusercontent.com/vQxNqpTJlBbkLsFPEQgYQQJLmKvcalKYiEB5Z_3Rfozqx8mTEsycuoX4peRKb5BRS3A=w832-h470-rw",
+      description:
+        "O Pessoal Web é foi criado para conectar empresas a pessoas que estão procurando uma oportunidade de emprego.",
+      linkGit: "#",
+      linkDeploy:
+        "https://play.google.com/store/apps/details?id=com.michhsilva.pessoalweb",
+      techStack: ["React Native", "TypeScript", "Styled Components", "Axios"],
+    },
+  ];
+
+  const techStack = [
+    { name: "React Native", children: <ReactNativeLogo /> },
+    { name: "React Js", children: <ReactLogo /> },
+    { name: "Styled Components", children: <LogoStyled /> },
+    { name: "TypeScript", children: <Ts /> },
+    { name: "JavaScript", children: <Js /> },
+    { name: "HTML", children: <Html /> },
+    { name: "CSS", children: <Css /> },
+    { name: "Scss", children: <Scss /> },
+    { name: "GitHub", children: <GitHub /> },
   ];
 
   return (
@@ -79,10 +104,41 @@ function Home() {
               Meu nome é
             </h2>
             <span className="name">Cassio Vileno</span>
-            <h2>Sou um desenvolvedor Front End</h2>
+            <h2>Sou desenvolvedor Front End</h2>
           </div>
-          <div className="avatar">
-            <img src="images/avatar.jpg" alt="avatar" />
+        </div>
+        <div id="sobre" className="about">
+          <div className="about-container">
+            <div className="text-about">
+              <h2>Sobre mim</h2>
+              <p>
+                Olá! Meu nome é Cassio e gosto de desenvolver sites e
+                aplicativos. Meu interesse em desenvolvimento web começou em
+                2019, quando começei a estudar HTML, CSS e JS. <br />
+              </p>
+              <p>
+                Avançando até hoje, e tive o privilégio de fazer estagio em{" "}
+                <a target="_blank" href="https://ativosdigital.com.br/">
+                  uma startup de contabilidade digital
+                </a>
+                , trabalhar em uma{" "}
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/company/meukbank/"
+                >
+                  administradora de cartões de crédito
+                </a>{" "}
+                e uma software house.
+              </p>
+              <p>
+                E fico feliz por trabalhar como desenvolvedor e scrum master,
+                sempre utilizando metodologias ágeis como o scrum e kanban para
+                otimizar o processo.
+              </p>
+            </div>
+            <div className="avatar">
+              <img src="images/avatar.jpg" alt="avatar" />
+            </div>
           </div>
         </div>
         <div id="technologies" className="second-session">
@@ -91,35 +147,32 @@ function Home() {
             <p>Tecnologias com as quais tenho dominio</p>
           </div>
           <div className="tech-stack">
-            <ReactLogo />
-            <Ts />
-            <Js />
-            <Html />
-            <Css />
-            <LogoStyled />
-            <Scss />
-            <GitHubTech />
+            {techStack.map((item) => (
+              <TechnologyCard children={item.children} name={item.name} />
+            ))}
           </div>
         </div>
         <div id="projects" className="third-session">
-          <h2 className="title-third">Projetos</h2>
-          <div className="card-container">
-            {projectData.map((item: ProjectTypes) => (
-              <ProjectCard
-                description={item.description}
-                imgUrl={item.imgUrl}
-                linkDeploy={item.linkDeploy}
-                linkGit={item.linkGit}
-                techStack={item.techStack}
-                name={item.name}
-              />
-            ))}
+          <div className="projects-container">
+            <h2 className="title-third">Projetos</h2>
+            <div className="card-container">
+              {projectData.map((item: ProjectTypes) => (
+                <ProjectCard
+                  description={item.description}
+                  imgUrl={item.imgUrl}
+                  linkDeploy={item.linkDeploy}
+                  linkGit={item.linkGit}
+                  techStack={item.techStack}
+                  name={item.name}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </body>
       <footer className="footer">
         <div className="footer-container">
-          <div className="container-contact">
+          <div id="contato" className="container-contact">
             <img
               className="logo"
               src="images/athena_logo.svg"

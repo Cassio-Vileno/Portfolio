@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GitHub } from "../../svg/gtihub";
+import { GitHub } from "../../svg/github";
 import { Instagram } from "../../svg/instagran";
 import { LinkedIn } from "../../svg/linkedin";
 import "./styles.scss";
@@ -51,12 +51,12 @@ const Header = () => {
             </a>
           </li>
           <li style={animateLinks(4)}>
-            <a onClick={toggleMenu} href="#">
+            <a onClick={toggleMenu} href="#sobre">
               Sobre
             </a>
           </li>
           <li style={animateLinks(5)}>
-            <a onClick={toggleMenu} href="#">
+            <a onClick={toggleMenu} href="#contato">
               Contato
             </a>
           </li>

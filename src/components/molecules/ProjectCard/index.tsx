@@ -1,5 +1,5 @@
 import { Chain } from "../../svg/chain";
-import { GitHub } from "../../svg/gtihub";
+import { GitHub } from "../../svg/github";
 import "./styles.scss";
 
 type ProjectTypes = {
@@ -37,13 +37,13 @@ function ProjectCard({
           <div className="hooks-card">
             <GitHub />
             <a target="_blank" href={linkGit}>
-              View Code
+              Ver codigo
             </a>
           </div>
           <div className="hooks-card">
             <Chain />
             <a target="_blank" href={linkDeploy}>
-              Live Preview
+              Visualizar
             </a>
           </div>
         </div>

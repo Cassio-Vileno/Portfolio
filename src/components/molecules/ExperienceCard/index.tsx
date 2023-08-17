@@ -1,6 +1,5 @@
- 
 import { Chain } from "../../svg/chain";
-import { GitHub } from "../../svg/gtihub";
+import { GitHub } from "../../svg/github";
 import "./styles.scss";
 
 type ProjectTypes = {
