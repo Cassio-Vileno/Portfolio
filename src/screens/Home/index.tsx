@@ -14,6 +14,7 @@ import { Css } from "../../components/svg/css";
 import { Html } from "../../components/svg/html";
 import { LogoStyled } from "../../components/svg/styledComponets";
 import { ReactNativeLogo } from "../../components/svg/reactNative";
+import TimeLine from "../../components/molecules/TimeLine";
 
 type ProjectTypes = {
   name: string;
@@ -141,6 +142,7 @@ function Home() {
             </div>
           </div>
         </div>
+        <TimeLine />
         <div id="technologies" className="second-session">
           <div className="title-second">
             <h2>Tecnologias</h2>
@@ -208,14 +210,12 @@ function Home() {
           </div>
           <div className="nav-footer-container">
             <nav>
-              <a href="#presentation">Home</a>
               <a href="#technologies">Habilidades</a>
+              <a href="#presentation">Home</a>
               <a href="#projects">Projetos</a>
-            </nav>
-            <nav>
               <a href="#projects">experiências</a>
-              <a href="#">Sobre</a>
               <a href="#">Contato</a>
+              <a href="#">Sobre</a>
             </nav>
           </div>
         </div>
