@@ -19,3 +19,40 @@
     }
   }
 }
+
+@media (max-width: 800px) {
+  #container-tech {
+    width: 150px;
+    height: 150px;
+
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+
+    .technology-name {
+      h2 {
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  #container-tech {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+
+    svg {
+      width: 55px;
+      height: 55px;
+    }
+
+    .technology-name {
+      h2 {
+        font-size: 15px;
+      }
+    }
+  }
+}
