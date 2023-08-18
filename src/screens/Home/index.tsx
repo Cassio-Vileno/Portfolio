@@ -4,7 +4,6 @@ import { Instagram } from "../../components/svg/instagran";
 import { LinkedIn } from "../../components/svg/linkedin";
 
 import "./styles.scss";
-import Header from "../../components/molecules/Header";
 import TechnologyCard from "../../components/molecules/TechnologyCard";
 import { ReactLogo } from "../../components/svg/react";
 import { Ts } from "../../components/svg/ts";
@@ -96,7 +95,6 @@ function Home() {
 
   return (
     <main className="main">
-      <Header />
       <body className="body">
         <div id="presentation" className="first-session">
           <div className="presentation-content">
@@ -114,8 +112,8 @@ function Home() {
               <h2>Sobre mim</h2>
               <p>
                 Olá! Meu nome é Cassio e gosto de desenvolver sites e
-                aplicativos. Meu interesse em desenvolvimento web começou em
-                2019, quando começei a estudar HTML, CSS e JS. <br />
+                aplicativos. Meu interesse em desenvolvimento web comecou em
+                2019, quando comecei a estudar HTML, CSS e JS. <br />
               </p>
               <p>
                 Avançando até hoje, e tive o privilégio de fazer estagio em{" "}

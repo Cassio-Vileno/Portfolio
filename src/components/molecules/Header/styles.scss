@@ -5,6 +5,13 @@ a {
   font-family: Poppins;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  background-color: #1d1d1d;
+  z-index: 10;
+}
+
 a:hover {
   opacity: 0.7;
 }
