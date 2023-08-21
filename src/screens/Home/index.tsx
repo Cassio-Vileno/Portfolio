@@ -113,7 +113,7 @@ function Home() {
               <p>
                 Olá! Meu nome é Cassio e gosto de desenvolver sites e
                 aplicativos. Meu interesse em desenvolvimento web comecou em
-                2019, quando comecei a estudar HTML, CSS e JS. <br />
+                2019, quando comecei a estudar HTML, CSS e JS.
               </p>
               <p>
                 Avançando até hoje, e tive o privilégio de fazer estagio em{" "}
