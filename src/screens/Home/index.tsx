@@ -140,7 +140,9 @@ function Home() {
             </div>
           </div>
         </div>
-        <TimeLine />
+        <div className="time-line-container">
+          <TimeLine />
+        </div>
         <div id="technologies" className="second-session">
           <div className="title-second">
             <h2>Tecnologias</h2>

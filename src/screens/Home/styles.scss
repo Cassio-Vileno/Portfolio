@@ -47,7 +47,7 @@
   .first-session {
     display: flex;
     width: 100%;
-    height: 65vh;
+    height: 620px;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -83,10 +83,10 @@
   .about {
     display: flex;
     width: 100%;
-    height: 55vh;
+    height: 520px;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     .about-container {
       display: flex;
@@ -148,7 +148,8 @@
   .second-session {
     display: flex;
     width: 100%;
-    height: 80vh;
+    height: 100%;
+    margin: 50px 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -211,6 +212,11 @@
       width: 100%;
       gap: 30px;
     }
+  }
+
+  .time-line-container {
+    display: flex;
+    height: 100%;
   }
 }
 
@@ -291,7 +297,7 @@
 
     .second-session {
       width: 100%;
-      height: 100vh;
+      height: 800px;
       margin: 10vh 0;
 
       .tech-stack {
@@ -416,13 +422,14 @@
     }
 
     .nav-footer-container {
-      display: flex;
-      height: 12vh;
+      height: 16vh;
       margin-top: 10px;
     }
 
     nav {
       flex-direction: column;
+      height: 50px;
+      flex-wrap: wrap;
       margin: 20px 0;
       gap: 15px;
       align-items: center;
@@ -486,8 +493,9 @@
       display: flex;
       flex-direction: column;
       margin: 20px 0;
-      height: 16vh;
+      height: 100px;
       width: 80%;
+      gap: 10px;
       flex-wrap: wrap;
       align-items: center;
     }
