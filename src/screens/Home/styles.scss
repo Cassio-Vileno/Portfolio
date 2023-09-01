@@ -113,11 +113,14 @@
       align-items: center;
       border-radius: 80px 25px;
       background: rgb(19, 176, 245);
+
       background: linear-gradient(
-        0deg,
+        to left,
         rgba(19, 176, 245, 1) 0%,
         rgba(231, 15, 170, 1) 100%
       );
+      background-size: 180% 100%;
+      animation: gradient-animation 1.5s infinite linear alternate-reverse;
       img {
         width: 335px;
         height: 335px;
@@ -145,7 +148,7 @@
     }
   }
 
-  .second-session {
+  .domain-of-technologies {
     display: flex;
     width: 100%;
     height: 100%;
@@ -175,9 +178,10 @@
       svg {
         width: 120px;
         height: 120px;
+        transition: all 250ms;
 
         &:hover {
-          transition: transform 150ms;
+          transition: transform 250ms;
           transform: scale(1.1);
         }
       }
@@ -272,6 +276,15 @@
   }
 }
 
+@keyframes gradient-animation {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
 @media (max-width: 890px) {
   * {
     overflow-x: visible;
@@ -304,7 +317,7 @@
       }
     }
 
-    .second-session {
+    .domain-of-technologies {
       width: 100%;
       height: 800px;
       margin: 10vh 0;
@@ -510,4 +523,13 @@
       align-items: center;
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e70faa;
+  border-radius: 7px 0 0 7px;
 }

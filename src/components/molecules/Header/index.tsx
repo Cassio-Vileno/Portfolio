@@ -20,7 +20,13 @@ const Header = () => {
   return (
     <header>
       <nav className={isActive ? "active" : ""}>
-        <img className="logo" src="images/athena_logo.svg" alt="athena_logo" />
+        <a href="#presentation">
+          <img
+            className="logo"
+            src="images/athena_logo.svg"
+            alt="athena_logo"
+          />
+        </a>
         <div
           className={`mobile-menu ${isActive ? "active" : ""}`}
           onClick={toggleMenu}
@@ -31,32 +37,40 @@ const Header = () => {
         </div>
         <ul className={`nav-list ${isActive ? "active" : ""}`}>
           <li style={animateLinks(0)}>
-            <a onClick={toggleMenu} href="#presentation">
+            <a
+              className="nav-section"
+              onClick={toggleMenu}
+              href="#presentation"
+            >
               Home
             </a>
           </li>
           <li style={animateLinks(1)}>
-            <a onClick={toggleMenu} href="#technologies">
+            <a
+              className="nav-section"
+              onClick={toggleMenu}
+              href="#technologies"
+            >
               Habilidades
             </a>
           </li>
           <li style={animateLinks(2)}>
-            <a onClick={toggleMenu} href="#projects">
+            <a className="nav-section" onClick={toggleMenu} href="#projects">
               Projetos
             </a>
           </li>
           <li style={animateLinks(3)}>
-            <a onClick={toggleMenu} href="#experiences">
+            <a className="nav-section" onClick={toggleMenu} href="#experiences">
               experiências
             </a>
           </li>
           <li style={animateLinks(4)}>
-            <a onClick={toggleMenu} href="#sobre">
+            <a className="nav-section" onClick={toggleMenu} href="#sobre">
               Sobre
             </a>
           </li>
           <li style={animateLinks(5)}>
-            <a onClick={toggleMenu} href="#contato">
+            <a className="nav-section" onClick={toggleMenu} href="#contato">
               Contato
             </a>
           </li>

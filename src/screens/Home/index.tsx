@@ -112,7 +112,7 @@ function Home() {
               <h2>Sobre mim</h2>
               <p>
                 Olá! Meu nome é Cassio e gosto de desenvolver sites e
-                aplicativos. Meu interesse em desenvolvimento web comecou em
+                aplicativos. Meu interesse em desenvolvimento web começou em
                 2019, quando comecei a estudar HTML, CSS e JS.
               </p>
               <p>
@@ -143,7 +143,7 @@ function Home() {
         <div className="time-line-container">
           <TimeLine />
         </div>
-        <div id="technologies" className="second-session">
+        <div id="technologies" className="domain-of-technologies">
           <div className="title-second">
             <h2>Tecnologias</h2>
             <p>Tecnologias com as quais tenho dominio</p>
