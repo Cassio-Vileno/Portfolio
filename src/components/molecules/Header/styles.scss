@@ -1,8 +1,15 @@
 header {
+  display: flex;
+  justify-content: center;
   position: fixed;
+  width: 100%;
   top: 0;
   background-color: #1d1d1d;
   z-index: 10;
+}
+
+#interface {
+  max-width: 1280px;
 }
 
 a {

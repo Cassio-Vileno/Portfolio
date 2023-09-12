@@ -77,6 +77,9 @@
       );
       -webkit-background-clip: text;
       color: transparent;
+      background-size: 180% 100%;
+
+      animation: gradient-animation 2s infinite linear alternate-reverse;
     }
   }
 
@@ -238,6 +241,14 @@
     justify-content: center;
     align-items: center;
     height: 45px;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100vw;
+      padding: 0 30px;
+      align-items: center;
+    }
   }
 
   .footer-container {

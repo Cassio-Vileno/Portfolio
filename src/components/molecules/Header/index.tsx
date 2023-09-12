@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav className={isActive ? "active" : ""}>
+      <nav id="interface" className={isActive ? "active" : ""}>
         <a href="#presentation">
           <img
             className="logo"
