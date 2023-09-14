@@ -140,7 +140,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="time-line-container">
+        <div id="experiencias" className="time-line-container">
           <TimeLine />
         </div>
         <div id="technologies" className="domain-of-technologies">
@@ -210,12 +210,12 @@ function Home() {
           </div>
           <div className="nav-footer-container">
             <nav>
-              <a href="#technologies">Habilidades</a>
               <a href="#presentation">Home</a>
+              <a href="#sobre">Sobre</a>
+              <a href="#experiencias">experiências</a>
+              <a href="#technologies">Habilidades</a>
               <a href="#projects">Projetos</a>
-              <a href="#projects">experiências</a>
-              <a href="#">Contato</a>
-              <a href="#">Sobre</a>
+              <a href="#contato">Contato</a>
             </nav>
           </div>
         </div>
