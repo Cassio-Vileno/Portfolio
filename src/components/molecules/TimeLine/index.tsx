@@ -13,14 +13,23 @@ const TimeLine = () => {
     {
       id: 1,
       title: "Interativa Soft - Desenvolvedor Web e mobile",
-      location: "Barreiras, Bahia",
+      location: "Home office",
       description:
-        "Atuando com Desenvolvedor pleno e scrum master contribui para o desenvolvimento e mantimento de aplicações de empresas como South & Co e westimob.",
-      date: "Janeiro 2023 - Agosto 2023",
+        "Atuando com Desenvolvedor pleno e scrum master inteirino contribui para o desenvolvimento e mantimento de aplicações de empresas como South & Co e westimob.",
+      date: "Janeiro 2023 - Julho 2024",
       icon: "work",
     },
     {
       id: 2,
+      title: "Sotero Tech - Desenvolvedor Web e mobile",
+      location: "Home office",
+      description:
+        "Desenvolvimento em react native focado em criar soluções MVP utilizando, React native, ReactJs, nodeJs e styled-components.",
+      date: "Outubro 2023 - Junho 2024",
+      icon: "work",
+    },
+    {
+      id: 3,
       title: "Kbank - Desenvolvedor Web e mobile",
       location: "Barreiras, Bahia",
       description:
@@ -29,7 +38,7 @@ const TimeLine = () => {
       icon: "work",
     },
     {
-      id: 3,
+      id: 4,
       title: "Ativos Digital - Estagio",
       location: "Barreiras - Bahia",
       description:
@@ -38,7 +47,7 @@ const TimeLine = () => {
       icon: "work",
     },
     {
-      id: 4,
+      id: 5,
       title: "CETEP",
       location: "Barreiras - Bahia",
       description:

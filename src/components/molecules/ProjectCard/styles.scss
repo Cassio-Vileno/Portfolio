@@ -70,7 +70,8 @@
 .container-hooks {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
 }
 
 .hooks-card {
@@ -80,13 +81,17 @@
   align-items: center;
   gap: 10px;
   padding-top: 10px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
 
   a {
-    color: #fff;
+    color: #000;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
+    text-decoration: none;
   }
 
   &:hover {

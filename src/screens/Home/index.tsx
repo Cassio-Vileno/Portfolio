@@ -19,7 +19,7 @@ type ProjectTypes = {
   name: string;
   imgUrl: string;
   description: string;
-  linkGit: string;
+  linkGit?: string;
   linkDeploy: string;
   techStack: string[];
 };
@@ -32,10 +32,9 @@ function Home() {
         "https://play-lh.googleusercontent.com/T0IToHWgfMjTNlcLfjvSuZv9hhWvQmssJv4aw6nZXYriecZF0XUg3Fj6q_wnzyI1VM_x=w5120-h2880-rw",
       description:
         "Uma plataforma intuitiva e prática, para que você tenaha acesso a todas as informações necessárias para fazer a gestão e concessão de crédito.",
-      linkGit: "#",
       linkDeploy:
         "https://play.google.com/store/apps/details?id=com.kaptureproposals&pli=1",
-      techStack: ["React Native", "TypeScript", "Styled Components", "Axios"],
+      techStack: ["React Native", "TypeScript", "Styled Components", "Jest"],
     },
     {
       name: "Kapture Auto",
@@ -43,7 +42,6 @@ function Home() {
         "https://play-lh.googleusercontent.com/T0IToHWgfMjTNlcLfjvSuZv9hhWvQmssJv4aw6nZXYriecZF0XUg3Fj6q_wnzyI1VM_x=w5120-h2880-rw",
       description:
         "Uma plataforma intuitiva de auto atendimento, para que você mesmo possa fazer o pedido de seu cartão de credito.",
-      linkGit: "#",
       linkDeploy: "https://atendimento.cartaoservir.com.br/",
       techStack: ["ReactJs", "TypeScript", "Styled Components", "Axios"],
     },
@@ -53,32 +51,34 @@ function Home() {
         "https://play-lh.googleusercontent.com/esYeNzaIU3UkJNw1WfgKMA_waTfSMrUHt53pGmOONQGGcdQJ89mFVhgPcQTMJHCuBPI=w832-h470-rw",
       description:
         "O FideliClub é um aplicativo de fidelidade com o objetivo de diminuir os custos de capitação de clientes das empresas com uma estrategia de cashback.",
-      linkGit: "#",
       linkDeploy:
         "https://play.google.com/store/apps/details?id=com.interativasoft.fideliclub",
       techStack: ["React Native", "TypeScript", "Styled Components", "Axios"],
     },
     {
-      name: "GitHub Explore",
-      imgUrl:
-        "https://user-images.githubusercontent.com/87983174/211084774-3afcba9e-94ab-4ca3-b2c8-3f499e7153ed.png",
+      name: "Ser mais Saudável",
+      imgUrl: "public/images/serMais.png",
       description:
-        "O GitHub Explore é uma plataforma de visualização de repositórios, bem como informações de cada repositório, como estrelas, forks e issues.",
-      linkGit: "https://github.com/Cassio-Vileno/GithubExplorer",
-      linkDeploy: "https://github-explorer-five-ruby.vercel.app/",
-      techStack: ["React", "TypeScript", "Styled Components", "Axios"],
+        "O Ser mais Saudável é uma plataforma onde pessoas podem se increverem para eventos esportivos e aulas gratuitas para que possam Ser Mais Saudáveis.",
+      linkDeploy: "https://sermaissaudavel.soterotech.com.br/",
+      techStack: [
+        "ReactJs",
+        "NextJs",
+        "TypeScript",
+        "Styled Components",
+        "Axios",
+      ],
     },
-    {
-      name: "Pessoal Web",
-      imgUrl:
-        "https://play-lh.googleusercontent.com/vQxNqpTJlBbkLsFPEQgYQQJLmKvcalKYiEB5Z_3Rfozqx8mTEsycuoX4peRKb5BRS3A=w832-h470-rw",
-      description:
-        "O Pessoal Web é foi criado para conectar empresas a pessoas que estão procurando uma oportunidade de emprego.",
-      linkGit: "#",
-      linkDeploy:
-        "https://play.google.com/store/apps/details?id=com.michhsilva.pessoalweb",
-      techStack: ["React Native", "TypeScript", "Styled Components", "Axios"],
-    },
+    // {
+    //   name: "Pessoal Web",
+    //   imgUrl:
+    //     "https://play-lh.googleusercontent.com/vQxNqpTJlBbkLsFPEQgYQQJLmKvcalKYiEB5Z_3Rfozqx8mTEsycuoX4peRKb5BRS3A=w832-h470-rw",
+    //   description:
+    //     "O Pessoal Web é foi criado para conectar empresas a pessoas que estão procurando uma oportunidade de emprego.",
+    //   linkDeploy:
+    //     "https://play.google.com/store/apps/details?id=com.michhsilva.pessoalweb",
+    //   techStack: ["React Native", "TypeScript", "Styled Components", "Axios"],
+    // },
   ];
 
   const techStack = [
@@ -111,32 +111,24 @@ function Home() {
             <div className="text-about">
               <h2>Sobre mim</h2>
               <p>
-                Olá! Meu nome é Cassio e gosto de desenvolver sites e
-                aplicativos. Meu interesse em desenvolvimento web começou em
-                2019, quando comecei a estudar HTML, CSS e JS.
-              </p>
-              <p>
-                Avançando até hoje, e tive o privilégio de fazer estagio em{" "}
-                <a target="_blank" href="https://ativosdigital.com.br/">
-                  uma startup de contabilidade digital
-                </a>
-                , trabalhar em uma{" "}
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/company/meukbank/"
-                >
-                  administradora de cartões de crédito
-                </a>{" "}
-                e uma software house.
-              </p>
-              <p>
-                E fico feliz por trabalhar como desenvolvedor e scrum master,
-                sempre utilizando metodologias ágeis como o scrum e kanban para
-                otimizar o processo.
+                Sou desenvolvedor com 3 anos de experiência. Minha verdadeira
+                paixão vai além de escrever códigos: vejo a programação como uma
+                poderosa ferramenta para solucionar problemas complexos. Não me
+                prendo a tecnologias específicas, mas sim à busca incessante por
+                soluções eficientes.
+                <br />
+                Gosto de compreender todo o processo da empresa, desde o projeto
+                até o produto final. Esse conhecimento me permite abordar cada
+                problema de forma mais eficaz e sugerir soluções precisas e
+                adequadas para cada escopo.
               </p>
             </div>
             <div className="avatar">
-              <img src="images/avatar.jpg" alt="avatar" />
+              <img
+                className="img-avatar"
+                src="images/avatar.jpg"
+                alt="avatar"
+              />
             </div>
           </div>
         </div>
@@ -156,7 +148,7 @@ function Home() {
         </div>
         <div id="projects" className="third-session">
           <div className="projects-container">
-            <h2 className="title-third">Projetos</h2>
+            <h2 className="title-third">Principais Projetos</h2>
             <div className="card-container">
               {projectData.map((item: ProjectTypes) => (
                 <ProjectCard

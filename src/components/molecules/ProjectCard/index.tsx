@@ -6,7 +6,7 @@ type ProjectTypes = {
   name: string;
   imgUrl: string;
   description: string;
-  linkGit: string;
+  linkGit?: string;
   linkDeploy: string;
   techStack: string[];
 };
@@ -22,6 +22,7 @@ function ProjectCard({
   return (
     <div className="container">
       <img src={imgUrl} alt="Imagem do projeto" />
+
       <div className="container-content">
         <div className="text-content">
           <h2 className="title">{name}</h2>
@@ -34,12 +35,14 @@ function ProjectCard({
           ))}
         </div>
         <div className="container-hooks">
-          <div className="hooks-card">
-            <GitHub />
-            <a target="_blank" href={linkGit}>
-              Ver codigo
-            </a>
-          </div>
+          {linkGit && (
+            <div className="hooks-card">
+              <GitHub />
+              <a target="_blank" href={linkGit}>
+                Ver codigo
+              </a>
+            </div>
+          )}
           <div className="hooks-card">
             <Chain />
             <a target="_blank" href={linkDeploy}>
