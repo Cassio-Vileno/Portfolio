@@ -57,7 +57,7 @@ function Home() {
     },
     {
       name: "Ser mais Saudável",
-      imgUrl: "public/images/serMais.png",
+      imgUrl: "images/serMais.png",
       description:
         "O Ser mais Saudável é uma plataforma onde pessoas podem se increverem para eventos esportivos e aulas gratuitas para que possam Ser Mais Saudáveis.",
       linkDeploy: "https://sermaissaudavel.soterotech.com.br/",
@@ -69,16 +69,6 @@ function Home() {
         "Axios",
       ],
     },
-    // {
-    //   name: "Pessoal Web",
-    //   imgUrl:
-    //     "https://play-lh.googleusercontent.com/vQxNqpTJlBbkLsFPEQgYQQJLmKvcalKYiEB5Z_3Rfozqx8mTEsycuoX4peRKb5BRS3A=w832-h470-rw",
-    //   description:
-    //     "O Pessoal Web é foi criado para conectar empresas a pessoas que estão procurando uma oportunidade de emprego.",
-    //   linkDeploy:
-    //     "https://play.google.com/store/apps/details?id=com.michhsilva.pessoalweb",
-    //   techStack: ["React Native", "TypeScript", "Styled Components", "Axios"],
-    // },
   ];
 
   const techStack = [
