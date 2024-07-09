@@ -42,7 +42,8 @@
 }
 
 .body {
-  width: 85%;
+  // width: 85%;
+  padding: 20px;
 
   .first-session {
     display: flex;
@@ -115,13 +116,14 @@
 
     .avatar {
       display: flex;
-      width: 350px;
-      height: 350px;
-      min-width: 350px;
+      width: 100%;
+      max-width: 350px;
+      height: auto;
       justify-content: center;
       align-items: center;
       border-radius: 80px 25px;
       background: rgb(19, 176, 245);
+      z-index: 1;
 
       background: linear-gradient(
         to left,
@@ -131,8 +133,9 @@
       background-size: 180% 100%;
       animation: gradient-animation 1.5s infinite linear alternate-reverse;
       img {
-        width: 335px;
-        height: 335px;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
         border-radius: 80px 25px;
       }
     }
