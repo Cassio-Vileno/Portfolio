@@ -116,14 +116,15 @@
 
     .avatar {
       display: flex;
-      width: 100%;
+      width: 120%;
+      height: 120%;
       max-width: 350px;
-      height: auto;
+      max-height: 350px;
       justify-content: center;
       align-items: center;
       border-radius: 80px 25px;
       background: rgb(19, 176, 245);
-      z-index: 1;
+      // z-index: 1;
 
       background: linear-gradient(
         to left,
@@ -134,8 +135,8 @@
       animation: gradient-animation 1.5s infinite linear alternate-reverse;
       img {
         width: 100%;
-        max-width: 350px;
-        height: auto;
+        max-width: 335px;
+        max-height: 335px;
         border-radius: 80px 25px;
       }
     }
