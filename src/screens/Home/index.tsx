@@ -60,7 +60,7 @@ function Home() {
       imgUrl: "images/serMais.png",
       description:
         "O Ser mais Saudável é uma plataforma onde pessoas podem se increverem para eventos esportivos e aulas gratuitas para que possam Ser Mais Saudáveis.",
-      linkDeploy: "https://sermaissaudavel.soterotech.com.br/",
+      linkDeploy: "https://app.sermaissaudavel.com/",
       techStack: [
         "ReactJs",
         "NextJs",
