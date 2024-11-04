@@ -3,17 +3,17 @@ import { GitHub } from "../../components/svg/github";
 import { Instagram } from "../../components/svg/instagran";
 import { LinkedIn } from "../../components/svg/linkedin";
 
-import "./styles.scss";
 import TechnologyCard from "../../components/molecules/TechnologyCard";
-import { ReactLogo } from "../../components/svg/react";
-import { Ts } from "../../components/svg/ts";
-import { Js } from "../../components/svg/js";
-import { Scss } from "../../components/svg/scss";
+import TimeLine from "../../components/molecules/TimeLine";
 import { Css } from "../../components/svg/css";
 import { Html } from "../../components/svg/html";
-import { LogoStyled } from "../../components/svg/styledComponets";
+import { Js } from "../../components/svg/js";
+import { ReactLogo } from "../../components/svg/react";
 import { ReactNativeLogo } from "../../components/svg/reactNative";
-import TimeLine from "../../components/molecules/TimeLine";
+import { Scss } from "../../components/svg/scss";
+import { LogoStyled } from "../../components/svg/styledComponets";
+import { Ts } from "../../components/svg/ts";
+import "./styles.scss";
 
 type ProjectTypes = {
   name: string;
@@ -198,6 +198,7 @@ function Home() {
               <a href="#technologies">Habilidades</a>
               <a href="#projects">Projetos</a>
               <a href="#contato">Contato</a>
+              <a target="_blank" href="/maz-fisio/privacy-policy">Politicas de privaciadade</a>
             </nav>
           </div>
         </div>
