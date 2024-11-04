@@ -7,7 +7,7 @@ const AppRoutes = () => {
     <Router basename="/">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/maz-fisio" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   );
