@@ -14,7 +14,7 @@ const PrivacyPolicy = () => {
         <section className="privacy-policy__section">
           <h2>Introdução</h2>
           <p>
-            Bem-vindo à nossa política de privacidade. Nesta página, explicamos como protegemos e usamos as suas informações pessoais.
+            Bem-vindo à nossa política de privacidade do <strong>maz fisio</strong>. Nesta página, explicamos como protegemos e usamos as suas informações pessoais.
           </p>
         </section>
         <section className="privacy-policy__section">
