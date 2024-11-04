@@ -4,7 +4,7 @@ import PrivacyPolicy from '../screens/PrivacyPolicy';
 
 const AppRoutes = () => {
   return (
-    <Router>
+    <Router basename="/">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/maz-fisio" element={<PrivacyPolicy />} />

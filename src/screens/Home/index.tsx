@@ -198,7 +198,7 @@ function Home() {
               <a href="#technologies">Habilidades</a>
               <a href="#projects">Projetos</a>
               <a href="#contato">Contato</a>
-              <a target="_blank" href="/maz-fisio/privacy-policy">Politicas de privaciadade</a>
+              <a target="_blank" href="/maz-fisio">Politicas de privaciadade</a>
             </nav>
           </div>
         </div>
