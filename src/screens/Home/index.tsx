@@ -46,16 +46,6 @@ function Home() {
       techStack: ["ReactJs", "TypeScript", "Styled Components", "Axios"],
     },
     {
-      name: "FideliClub",
-      imgUrl:
-        "https://play-lh.googleusercontent.com/esYeNzaIU3UkJNw1WfgKMA_waTfSMrUHt53pGmOONQGGcdQJ89mFVhgPcQTMJHCuBPI=w832-h470-rw",
-      description:
-        "O FideliClub é um aplicativo de fidelidade com o objetivo de diminuir os custos de capitação de clientes das empresas com uma estrategia de cashback.",
-      linkDeploy:
-        "https://play.google.com/store/apps/details?id=com.interativasoft.fideliclub",
-      techStack: ["React Native", "TypeScript", "Styled Components", "Axios"],
-    },
-    {
       name: "Ser mais Saudável",
       imgUrl: "images/serMais.png",
       description:
@@ -67,6 +57,61 @@ function Home() {
         "TypeScript",
         "Styled Components",
         "Axios",
+      ],
+    },
+    {
+      name: "Wcare",
+      imgUrl: "images/wcare.png",
+      description:
+        "O WCare é um software especializado na gestão de clínicas de quiropraxia, projetado para automatizar tarefas administrativas e aprimorar a experiência dos pacientes.",
+      linkDeploy: "https://wcare.com.br/",
+      techStack: [
+        "VueJs",
+        "bootstrap",
+        "TypeScript",
+        "PHP",
+        "Laravel",
+      ],
+    },
+    {
+      name: "Corporação capsula",
+      imgUrl: "images/capsulaLogo.png",
+      description:
+        "Site para captação de leads para a empresa Capsula Personalizados. Com design moderno, responsivo e animações para uma melhor esperiencia do usuario.",
+      linkDeploy: "https://www.capsulapersonalizados.com.br/",
+      techStack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "figma"
+      ],
+    },
+    {
+      name: "Codigo Kid Barreiras",
+      imgUrl:
+        "images/codigoKid.png",
+      description:
+        "Site captura de leads para a empresa Codigo Kid Barreiras. Que conta comta com design moderno, responsivo e animações fluidas para uma melhor esperiencia do usuario.",
+      linkDeploy:
+        "https://codigokidbarreiras.com.br/",
+      techStack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+      ],
+    },
+    {
+      name: "Interativa Soft",
+      imgUrl:
+        "images/Interativa.png",
+      description:
+        "Site captura de leads para a empresa Interativa Soft. Que conta comta com design moderno, responsivo para uma melhor esperiencia do usuario.",
+      linkDeploy:
+        "https://interativasoft.com.br/",
+      techStack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
       ],
     },
   ];

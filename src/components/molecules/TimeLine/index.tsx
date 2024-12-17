@@ -2,16 +2,25 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { Work } from "../../svg/work";
 import { School } from "../../svg/School";
+import { Work } from "../../svg/work";
 
-import "./styles.scss";
 import "react-vertical-timeline-component/style.min.css";
+import "./styles.scss";
 
 const TimeLine = () => {
   const timelineElements = [
     {
       id: 1,
+      title: "PerSysten Sistemas - Desenvolvedor Web e mobile",
+      location: "Home office",
+      description:
+        "Atuando no desenvolvimento de aplicações web e mobile com as tecnologias React Native e VueJs trabalhei em projetos como o wcare",
+      date: "Setembro 2024 - Atual",
+      icon: "work",
+    },
+    {
+      id: 2,
       title: "Interativa Soft - Desenvolvedor Web e mobile",
       location: "Home office",
       description:
@@ -20,7 +29,7 @@ const TimeLine = () => {
       icon: "work",
     },
     {
-      id: 2,
+      id: 3,
       title: "Sotero Tech - Desenvolvedor Web e mobile",
       location: "Home office",
       description:
@@ -29,7 +38,7 @@ const TimeLine = () => {
       icon: "work",
     },
     {
-      id: 3,
+      id: 4,
       title: "Kbank - Desenvolvedor Web e mobile",
       location: "Barreiras, Bahia",
       description:
@@ -38,7 +47,7 @@ const TimeLine = () => {
       icon: "work",
     },
     {
-      id: 4,
+      id: 5,
       title: "Ativos Digital - Estagio",
       location: "Barreiras - Bahia",
       description:
@@ -47,7 +56,7 @@ const TimeLine = () => {
       icon: "work",
     },
     {
-      id: 5,
+      id: 6,
       title: "CETEP",
       location: "Barreiras - Bahia",
       description:
